@@ -1,0 +1,11 @@
+.button-spacing {
+    margin: 5px;
+}
+
+.control.has-danger input {
+    background-color: rgba(204, 71, 40, 0.3);
+}
+
+.control.has-danger .validation-text {
+    color: rgba(204, 71, 40, 0.6);
+}
