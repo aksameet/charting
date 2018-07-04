@@ -39,7 +39,7 @@ class App extends Component {
 
       const { name, F, A, Pts } = result;
 
-      let sum = F + A;
+      let sum = Math.abs(F - A);
       arr.push(sum);
       minimum = Array.min(arr);
       names.push(name);
@@ -55,13 +55,13 @@ class App extends Component {
       names,
       scored_for,
       scored_against,
-      points,
+      points
     })
   }
 
   renderTeams() {
     return this.props.teams.map((result, idx) => {
-      let sum = result.F + result.A,
+      let sum = Math.abs(result.F - result.A),
           className
 
       if (sum === this.state.minimum) {
